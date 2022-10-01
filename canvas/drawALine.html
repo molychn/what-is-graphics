@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Draw A Line</title>
+</head>
+<body>
+  <canvas id="canvas" style="border: 1px solid #ebebeb; display: block; margin: 10px auto;"></canvas>
+
+<script>
+  const canvas = document.getElementById('canvas');
+  // 确定canvas的宽高
+  canvas.width = 800;
+  canvas.height = 600;
+
+  // 配置画布
+  const context = canvas.getContext('2d');
+  // canvas是基于左上角为原点出发，每次绘制时起笔的坐标也需要使用moveTo移动到该位置
+  context.moveTo(100, 100);
+  // lineTo相当于从起始点笔直移动到目的点
+  context.lineTo(700, 500);
+  // 路径底稿已配置好后就对画笔进行设置
+  context.lineWidth = 5;
+  context.strokeStyle = '#37ac68';
+  // 调用stroke实现绘制
+  context.stroke();
+</script>
+</body>
+</html>
