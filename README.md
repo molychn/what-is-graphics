@@ -52,3 +52,4 @@ context.strokeStyle = 'yellow';
 6. createPattern，传入img，video，canvas等对象，第二参数决定填充类型。
 7. arc(x, y, r, startAngle, endAngle, actionclockwise)绘制圆弧，前三参数决定圆心坐标与半径，start与end决定弧度值，action决定顺逆时针方向。
 ![arc](/assets/arc.png)
+8. arcTo(x1,y1,x2,y2,radius)，以给定的半径绘制一条弧线，圆弧的起点与当前路径的位置到(x1, y1)点的直线相切，圆弧的终点与(x1, y1)点到(x2, y2)的直线相切。因此其通常配合moveTo()或lineTo()使用。
