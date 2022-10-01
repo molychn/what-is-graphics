@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient</title>
+</head>
+<body>
+  <canvas id="canvas" style="border: 1px solid #ebebeb; display: block; margin: 10px auto;"></canvas>
+<script>
+  const canvas = document.getElementById('canvas');
+  // 确定canvas的宽高
+  canvas.width = 800;
+  canvas.height = 600;
+
+  const ctx = canvas.getContext('2d');
+  ctx.beginPath();
+  ctx.rect(50, 50, 300, 300);
+  // 创建线性渐变
+  const grdL = ctx.createLinearGradient(50, 150, 350, 150);
+  grdL.addColorStop(0, 'black');
+  grdL.addColorStop(.5, 'white');
+  grdL.addColorStop(1, 'black');
+
+  ctx.fillStyle = grdL;
+  ctx.fill();
+
+  // 创建径向渐变
+  ctx.beginPath();
+  const grdR = ctx.createRadialGradient(600, 300, 100, 600, 300, 200);
+  grdR.addColorStop(0, 'green');
+  grdR.addColorStop(.5, 'yellow');
+  grdR.addColorStop(1, 'pink');
+
+  ctx.fillStyle = grdR;
+  ctx.fillRect(400, 200, 300, 300)
+</script>
+</body>
+</html>
