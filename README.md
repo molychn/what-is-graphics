@@ -46,4 +46,4 @@ context.strokeStyle = 'yellow';
 
 1. closePath，可以对线条的绘制形成闭合，即会在终点与起始点连接成直线。 [闭合三角形](/canvas/triangle.html)
 2. fill，与stroke用于绘制，但其绘制作用主要在于填充。 [填充三角形](/canvas/triangle.html)
-3. rect，绘制矩形的方法，其参数分别为左上，右下的坐标
+3. rect，绘制矩形的方法，其参数分别为左上，右下的坐标。[矩形](/canvas/triangle.html)
