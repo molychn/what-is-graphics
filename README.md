@@ -49,3 +49,6 @@ context.strokeStyle = 'yellow';
 3. rect，绘制矩形的方法，其参数分别为左上，右下的坐标。[矩形](/canvas/triangle.html)
 4. fillRect和strokeRect实现快捷绘制实心空心矩形
 5. createLinearGradient和createRadialGradient创建线性与径向渐变效果。[渐变](/canvas/gradient.html)
+6. createPattern，传入img，video，canvas等对象，第二参数决定填充类型。
+7. arc(x, y, r, startAngle, endAngle, actionclockwise)绘制圆弧，前三参数决定圆心坐标与半径，start与end决定弧度值，action决定顺逆时针方向。
+![arc](/assets/arc.png)
