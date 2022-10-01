@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triangle</title>
+</head>
+<body>
+  <canvas id="canvas" style="border: 1px solid #ebebeb; display: block; margin: 10px auto;"></canvas>
+<script>
+  const canvas = document.getElementById('canvas');
+  // 确定canvas的宽高
+  canvas.width = 800;
+  canvas.height = 600;
+
+  const ctx = canvas.getContext('2d');
+  ctx.beginPath();
+  ctx.moveTo(400, 100);
+  ctx.lineTo(600, 300);
+  ctx.lineTo(200, 300);
+  ctx.closePath();
+  ctx.lineWidth = 5;
+  ctx.strokeStyle = '#37ac68';
+  ctx.stroke();
+  ctx.fillStyle = '#23d5a5';
+  ctx.fill();
+</script>
+</body>
+</html>
