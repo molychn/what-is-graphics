@@ -56,3 +56,22 @@ context.strokeStyle = 'yellow';
 9. quadraticCurveTo，二次贝赛尔曲线绘制。
 10. bezierCurveTo，三次贝塞尔曲线绘制。
 11. save与restore，将当前状态保存至堆栈和从堆栈中调出最后存储的画布。
+12. translate，相对于画布原点进行坐标轴平移，且每次相对于上一次作位移运算。可以使用save和restore来保存获取初始原点状态，不至于在切换过程中发生混乱。[平移](/canvas/translate.html)
+13. rotate，相对坐标原点，传入**弧度**值实现旋转，需要对画布中某个点进行旋转时可以配合translate平移坐标轴后再旋转。
+14. scale，相对画布实现缩放交互，其中坐标和线条都会受缩放影响。
+15. transform(a, b, c, d, e, f)，矩阵变换。
+![transform](/assets/transform.png)
+16. shadowColor, shadowOffsetX/Y, shadowBlur绘制阴影效果
+17. globalAlpha，设置全局透明
+18. globalCompositeOperation，设置图像合成
+![globalCompositeOperation](/assets/globalCompositeOperation.png)
+19. font 字体的设置
+![font](/assets/font.png)
+```javascript
+context.font =
+"[font-style] [font-variant] [font-weight]
+[font-size/line-height] [font-family]"
+```
+20. clip，实现画布裁剪
+21. drawImage，绘制图像，画布，视频
+![drawImage](/assets/drawImage.png)
